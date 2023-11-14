@@ -23,5 +23,6 @@ It uses Arduino IDE as programming environment
 # Guide
 To execute this software follow these steps:
 1. Download or clone this repository to your local machine.
-2. Open the hum_temp_sensor.ino inside Arduino IDE
-3. Compile and flash hum_temp_sensor.ino 
+2. Open the [`temp_hum_sensor.ino`](/temp_hum_sensor/temp_hum_sensor.ino) inside Arduino IDE
+3. Compile and flash [`temp_hum_sensor.ino`](/temp_hum_sensor/temp_hum_sensor.ino)
+
