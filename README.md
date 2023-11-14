@@ -7,7 +7,7 @@ This repo is focus in create a system that:
 It uses Arduino IDE as programming environment
 ## Hardware Requirements
 - Arduino UNO R3 (or any other board with enough pins)
-- DHT11 sensor for measure temperature and humidity
+- DHT22 sensor for measure temperature and humidity
 - 2x16 LCD display module
 - Jumper wires
 - Power supply
