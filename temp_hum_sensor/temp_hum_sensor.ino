@@ -1,5 +1,4 @@
 #include "DHT.h"
-#include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
 #define DHT_DEVICE 2
@@ -10,7 +9,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); //
 
 float humidity;
 float temperature;
-int c = 0;
+int cnt = 0;
 void show_temp_and_hum_in_lcd(LiquidCrystal_I2C *lcd_obj, float temp, float hum)
 {
   lcd_obj->setCursor(0, 0);
@@ -25,7 +24,7 @@ void show_temp_and_hum_in_lcd(LiquidCrystal_I2C *lcd_obj, float temp, float hum)
 void setup()
 {
   Serial.begin(9600);
-  Serial.println("Iniciando...");
+  Serial.println("Init...");
   dht22.begin();
   lcd.init();
   lcd.backlight();
@@ -37,8 +36,9 @@ void loop()
   humidity = dht22.readHumidity();
   temperature = dht22.readTemperature();
 #else
-  humidity = 10;
-  temperature = 50;
+  humidity = 10+ cnt;
+  temperature = 50 + cnt;
+  cnt++;
 #endif
   Serial.println(humidity);
   Serial.println(temperature);
