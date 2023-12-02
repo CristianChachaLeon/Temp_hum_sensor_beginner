@@ -18,8 +18,9 @@ It uses Arduino IDE as programming environment
     - DLiquidCrystal_I2CHT library
 
 # Conexion diagram
-![diagrama](/images/Diagram_beginner.png)
-
+![diagram](/images/Diagram_beginner.png)
+# Prototype
+![prototype](/images/Prototype.jpeg)
 # Guide
 To execute this software follow these steps:
 1. Download or clone this repository to your local machine.

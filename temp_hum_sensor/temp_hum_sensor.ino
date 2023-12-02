@@ -43,5 +43,5 @@ void loop()
   Serial.println(humidity);
   #endif
   show_temp_and_hum_in_lcd(&lcd, temperature, humidity);
-  delay(1000);
+  delay(200);
 }
