@@ -17,7 +17,7 @@ It uses Arduino IDE as programming environment
     - DHT library
     - DLiquidCrystal_I2CHT library
 
-# Diagraman connetions
+# Conexion diagram
 ![diagrama](/images/Diagram_beginner.png)
 
 # Guide
